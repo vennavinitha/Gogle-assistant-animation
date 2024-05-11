@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 1450px;
+            height: 850px;
+            background-color:rgb(215, 250, 218);
+            position: relative;
+            border: 2px;
+        }
+        #ball1{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color:blue;
+            position: absolute;
+            bottom: 48%;
+            left: 45%;
+            animation-name: Balls_floating;
+            animation-duration:1s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;    
+        }
+        #ball2{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color:red;
+            position: absolute;
+            bottom: 48%;
+            left: 50%;
+            animation-name: Balls_floating;
+            animation-duration:1.2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;    
+        }
+        #ball3{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color:yellow;
+            position: absolute;
+            top: 48%;
+            left: 55%;
+            animation-name: Balls_floating;
+            animation-duration:1s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;    
+        }
+        #ball4{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color:orangered;
+            position: absolute;
+            top: 48%;
+            left: 60%;
+            animation-name: Balls_floating;
+            animation-duration:1.2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;    
+        }
+        @keyframes Balls_floating{
+            from{transform: translateY(0px);}
+            to{transform: translateY(30px);}
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="ball1"></div>
+        <div id="ball2"></div>
+        <div id="ball3"></div>
+        <div id="ball4"></div>
+    </div>
+    
+</body>
+</html>
